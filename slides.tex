@@ -1,0 +1,104 @@
+%--------------------------------------------%
+% Template Beamer para Apresentações da UFRN %
+% by alcemygvseverino@gmail.com              %
+% Baseado em MIT Beamer Template			 %
+% versao 1.1								 %
+% Atualizado em 14/05/2016					 %
+%--------------------------------------------%
+\documentclass[handout,t]{beamer}
+% Para alterar a linguagem do documento
+\usepackage[english]{babel}
+% Para aceitar caracteres especias deretamente do teclado
+\usepackage[utf8]{inputenc}
+% Para seguir as normas da ABNT de citacao e referencias
+\usepackage[alf]{abntex2cite}
+% To include figures
+\usepackage{graphicx}
+% Para melhor ajuste da posisao das figuras
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+% Para incluir paginas de documentos .pdf externos
+\usepackage{pgfpages}
+\usepackage{pgf}
+% Para ajustar o estilo dos contadores
+\usepackage{enumerate}
+% Para modificar a cor do texto
+\usepackage{color}
+% Para incluir condicoes
+\usepackage{ifthen}
+% Para colocar legendas em algo que nao e float
+\usepackage{capt-of}
+% Para definir o tema do slide
+\usetheme{Berlin}
+% Para difinir cores e background
+\usecolortheme{ufrn}
+% Para numerar as figuras
+\setbeamertemplate{caption}[numbered]
+% For hyperlinks
+\usepackage{hyperref}
+
+% Title
+\title[Princeton Group Meeting]{
+	Princeton Weekly Group Meeting: \\ Slides}
+% Data
+\date{July 11, 2019}
+% Authors
+\author[Stephanie Kwan]{
+	Stephanie Kwan \\
+	\textrm{skwan@princeton.edu} %\inst{1}
+%	\\	\vspace{0.25cm}
+%	Autor 02 \inst{2}
+}
+
+
+
+% Institution
+\institute[Institutions]{
+%	\inst{1}%
+	Princeton University}
+% Right bottom corner
+
+
+
+\logo{\includegraphics[width=.05\textwidth]{figures/Princetonshieldlarge.png}~~%
+\includegraphics[width=.06\textwidth]{figures/CMSlogo.png}}
+
+
+
+\begin{document}
+% Summary
+    
+\frame{\titlepage}
+\section[]{}
+\begin{frame}{Summary}
+	\tableofcontents
+\end{frame}
+
+% Introduction
+\include{tex/introduction/introduction}
+
+% Methodology
+\include{tex/methodology/methodology}
+
+% Results
+\include{tex/results/results}
+
+% Conclusion
+\include{tex/conclusion/conclusion}
+
+% Backup slides
+\include{tex/backup/backup}
+
+% References
+%\include{tex/references/references}
+
+% Acknowledgments
+%\section{}
+%\begin{frame}{Acknowledgments}
+%	Agradeço a todos. 	
+%\end{frame}
+
+\end{document}
